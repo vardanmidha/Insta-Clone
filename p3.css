@@ -1,0 +1,407 @@
+body{
+    background-color: white;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-family: 'Cookie', cursive;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+    text-decoration: bold;
+}
+
+#signin,
+#signup,
+#getapp{
+    border: 1px rgb(180, 176, 176) solid;
+    padding: 10px;
+    width: 340px;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.username,
+.password{
+    color: black;
+    border: 1px rgb(180, 176, 176) solid;
+    width: 250px;
+    height: 15px;
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    opacity: 0.4;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 2;
+}
+
+.userspan{
+    position: absolute;
+    font-size: 1rem;
+    transform: translate(-139%, 55%);
+    transition: 1s;
+}
+
+.passspan{
+    position: absolute;
+    font-size: 1rem;
+    transform: translate(-414%,49%);
+    transition: 1s;
+}
+
+.username:focus + .userspan ,
+.username:valid + .userspan {
+    font-size: 0.8rem;
+    transform: translate(-177%,-02%);
+}
+
+.password:focus + .passspan,
+.password:valid + .passspan{
+    font-size: 0.8rem;
+    transform: translate(-527%,-0%);
+}
+
+/* .username:focus::placeholder,
+.password:focus::placeholder
+{
+        position: absolute;
+        font-size: 0.5rem;
+        text-align: top;justify-content: top;
+        padding-top: 0%;
+        padding-bottom: 10px;
+} */
+
+
+
+
+/* label{
+    position: absolute;
+    color: #808184;
+    transform: translate(-460% , 49%);
+    z-index: 1;
+}
+
+.userlab{
+    transform: translate(-155% , 49%);
+} */
+
+
+
+
+.login{
+    color: white;
+    border-radius: 8px;
+    width: 280px;
+    font-size: 1.1rem;
+    padding: 5px;
+    background-color: rgb(49, 125, 255);
+}
+
+a{
+    text-decoration: none;
+}
+
+.fa{
+    border: 1px #3b5998 solid;
+    color: white;
+    background: #3b5998;
+    padding: 5px;
+    padding-bottom: 0%;
+}
+
+.facebook{
+    margin: 5px;
+    background: white;
+    color: #3b5998;
+
+}
+
+.or{
+    width: 310px;
+    border-bottom: white;
+    border-left: white;
+    border-right: white;
+}
+
+.frgt{
+    color: black;
+}
+
+
+
+.getappimg{
+    width: 120px;
+    height: 40px;
+}
+
+
+#phone{
+    background: url(home-phones.png) no-repeat center/cover;
+    width: 400px;
+    height: 650px;
+    margin-right: 50px;
+    /* overflow: hidden; */
+
+}
+.phoneimg1{
+    height: 550px;
+    margin-right: 50px;
+    transform: translate(48% , 5%);
+    animation: img1 30s linear infinite;
+
+}
+
+.phoneimg2{
+    height: 550px;
+    margin-right: 50px;
+    transform: translate(-71% , 5%);
+    animation: img2 30s linear infinite;
+
+}
+
+.phoneimg3{
+    height: 550px;
+    margin-right: 50px;
+    transform: translate(-191% , 5%);
+    animation: img3 30s linear infinite forwards;
+
+}
+
+.phoneimg4{
+    height: 550px;
+    margin-right: 50px;
+    transform: translate(-310.5% , 5%);
+    animation: img4 30s linear infinite forwards;
+
+}
+
+
+
+.imggroup{
+    display: flex;
+    
+}
+
+@keyframes img1 {
+
+    0%{
+        opacity: 100%;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40% {
+       opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
+@keyframes img2 {
+
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 100%;
+    }
+    45% {
+       opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes img3 {
+
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40% {
+       opacity: 0;
+    }
+    55%{
+        opacity: 100%;
+    }
+
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes img4 {
+
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40% {
+       opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 100%;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
+
+
+footer{
+    margin-top: 0;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.fotterlink{
+    color: rgb(93, 91, 91);
+    padding: 10px;
+    padding-top: 0px;
+    font-size: 0.9rem;
+
+}
+
+.copyright{
+    align-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+@media screen and (max-width:930px){
+
+
+    #phone{
+        display: none;
+    }
+
+    .userspan{
+        width: 500px;
+        transform: translate(-84%, 60%);
+    }
+
+.username:focus + .userspan ,
+.username:valid + .userspan {
+    font-size: 0.8rem;
+    transform: translate(-87%,-02%);
+}
+
+}
+   
+@media screen and (width:400px){
+
+
+    #phone{
+        display: none;
+    }
+
+    .passspan{
+        transform: translate(-414%,59%);
+    }
+    
+    .userspan{
+        width: 500px;
+        transform: translate(-84%, 60%);
+    }
+
+.username:focus + .userspan ,
+.username:valid + .userspan {
+    font-size: 0.8rem;
+    transform: translate(-7%,-02%);
+}
+
+}
+    
